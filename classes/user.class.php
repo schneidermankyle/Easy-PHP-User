@@ -47,7 +47,7 @@ class User {
 		// Define what environment this is currently running as
 		'mode' => 'development',
 		// How should errors be handled? 
-		// verbouse: echos errors to to the screen 
+		// verbose: echos errors to to the screen 
 		// Silent: Simply returns to the calling function that there was no error but nothing more
 		// log: writes error to log file at defined destination.
 		// both: both echos to screen and logs error
@@ -220,7 +220,7 @@ class User {
 		var_dump($error);
 		// This function's sole purpose to figure out how to handle errors.
 		// In the future,  I would like to expand on this and perhaps include more options like json
-		if (isset($error) && ($this->config['errorHandling'] === 'verbouse' || $this->config['errorHandling'] === 'both') ) {
+		if (isset($error) && ($this->config['errorHandling'] === 'verbose' || $this->config['errorHandling'] === 'both') ) {
 			// Echo or dump error directly to screen
 			if (!$this->config['mode'] === 'development' && $error['level'] > 1) {
 				// Then we need to senser ourselves.

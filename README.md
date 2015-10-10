@@ -46,7 +46,7 @@ Example: ‘db’ => array(
 )
 ```
 
-**•	'max_login_attempts':** This class supports rate limiting users to help avoid DDOS attacks.
+**•	'max_login_attempts':** This class supports rate limiting users to help avoid brute force attacks.
 
 Default Value: 5.
 
